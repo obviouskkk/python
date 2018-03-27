@@ -7,7 +7,7 @@ print("hello world");
 #name = input();
 # input提示
 name = input("please input your name: ");
-print("your name is", name);
-a=[1, 2, 3, 4];
-for i in a:
-    print(i);
+print("your name is", name); 
+
+# input()返回的数据类型是str
+# 如果需要int可以用int() 转换成str()
