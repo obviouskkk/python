@@ -17,4 +17,21 @@ print([m + n for m in 'ABC' for n in 'XYZ'])  # ['AX', 'AY', 'AZ', 'BX', 'BY', '
 import os
 print([d for d in os.listdir('.')])
 
+# 使用多个变量
+dicA = {"zzy":23, "aut":25, "eden":30}
+for k, v in dicA.items():
+    print(k, " = ", v);
+
+L = ['Hello', 'World', 'IBM', 'Apple']
+print([s.lower() for s in L])
+
+L1 = ['Hello', 'World', 18, 'Apple', None]
+L2 = [x.lower() for x in L1 if isinstance(x, str)];
+print(L2)
+
+# test
+if L2 == ['hello', 'world', 'apple']:
+    print('测试通过!')
+else:
+    print('测试失败!')
 
